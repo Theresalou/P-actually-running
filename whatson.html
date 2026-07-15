@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatson</title>
+    <link rel="stylesheet" href="./whatson.css">
+</head>
+<body>
+    <h1 style="font-family:fantasy; font-size: 35px;" class="horizon">What's On / A l'actu</h1>
+
+    <div class="Container">
+        <h2 id="title"></h2>
+        <p id="date"></p>
+        <img id="image">
+        <p id="description"></p>
+    </div>
+
+<script>
+    fetch("https://api.nasa.gov/planetary/apod?api_key=TRqSqJkWACHnr7cvb4V1Vg8tNGme2rU90ggrlirU")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        document.getElementById("description").textContent = data.explanation;
+        document.getElementById("title").textContent = data.title;
+        document.getElementById("date").textContent = data.date;
+
+    if(data.media_type === "image"){
+        document.getElementById("image").src = data.url;
+        document.getElementById("image").style.display = "block";
+    }else{
+        document.getElementById("image").style.display = "none";
+    }
+});
+
+try {
+    
+} catch (error) {
+    
+}(error => console.log("Erreur", error));
+</script>
+</body>
+</html>

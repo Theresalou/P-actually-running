@@ -1,0 +1,71 @@
+body{
+    /* background-color: rgb(1, 7, 34); */
+    background-image: url(./image/starry.jfif);
+    min-height: 100vh;
+}
+.classee{
+    background: transparent;
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: fantasy;
+    color: bisque;
+}
+
+.compass{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 76%;
+}
+
+
+h2{
+    text-align: center;
+    word-spacing: 15px;
+    letter-spacing: 10px;
+    font-size: 50px;
+    font-family: fantasy;
+    color: bisque;
+}
+
+.common{
+    display: flex;
+}
+
+.common img:hover{
+    transform: scale(1.1);
+}
+
+.Elements{
+    position: relative;
+    margin: 0;
+    left: 0;
+}
+.Elements a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    text-decoration: none;
+    font-family:fantasy;
+    font-size: 30px;
+    line-height: 100px;
+    transition: 0.4s;
+
+}
+.Elements a:hover{
+    transform: scale(1.1);
+    color: #333;
+    background-color: bisque;
+    border-radius: 10px;
+    width: 100%;
+}

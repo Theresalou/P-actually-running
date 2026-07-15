@@ -1,0 +1,45 @@
+body{
+    background:
+    radial-gradient(circle at 20% 30%, #e294ec, transparent 25%),
+    radial-gradient(circle at 80% 70%, #e294ec, transparent 25%),
+    linear-gradient(to bottom, rgb(243, 179, 245), #231651, rgb(243, 179, 245));
+
+    overflow:auto;
+    margin:30px;
+}
+
+.container{
+    position: relative;
+    align-items: center;
+    gap: 20px;
+}
+.horizon{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 30px rgba(245, 130, 130, 0.675);
+}
+#date{
+    font-size: 20px;
+    text-align: center;
+    font-weight:bolder;
+}
+#title{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 28px;
+    font-weight: 100;
+}
+#image{
+    border: 5px solid rgb(37, 37, 37);
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    width: 850px;
+}
+#description{
+    text-align: center;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}

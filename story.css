@@ -1,0 +1,155 @@
+body{
+    background: url(https://i.pinimg.com/736x/fe/8e/81/fe8e81b182106bbce4dd178222ead38b.jpg);
+}
+nav{
+    background-color:rgb(50, 35, 116);
+    padding: 1rem;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    font-style:italic;
+    font-size: 15px;
+    color: white;
+    text-decoration:none;
+    padding: 10px 20px;
+    display: block;
+    gap: 8px;
+    align-items: center;
+}
+nav ul li a:hover{
+    background-color: rgb(83, 71, 136);
+    border-radius: 20px;
+}
+.home-link{
+    position: flex;
+    width: 60px;
+    height: 20px;
+    inset: 0;
+    z-index: 100;
+}
+.contact-link{
+    position: flex;
+    width: 80px;
+    height: 20px;
+    inset: 0;
+    z-index: 100;
+}
+.stars{
+    width: 3px;
+    height: 3px;
+    background-color: whitesmoke;
+    animation: twinkle 3s infinite;
+
+    box-shadow:
+    50px 1000px white,
+    50px 1080px white,
+    1000px 80px white,
+    1050px 89px white,
+    200px 890px white,
+    1020px 1600px white,
+    50px 80px white,
+    300px 10px white,
+    970px 800px white,
+    238px 1800px white,
+    484px 10040px white,
+    80px 120px white;
+}
+@keyframes twinles{
+    0%{opacity: 0.3;}
+    50%{opacity: 1;}
+    100%{opacity: 0.3;}
+}
+
+.Bulles{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.Cards{
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(0, 0, 15);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+}
+.card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 100;
+}
+.Cards span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: monospace;
+}
+.Cards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.Cards span,
+.Cards .overlay{
+    pointer-events: none;
+}
+.Cards a:hover{
+    border-radius: 13px;
+    transform: scale(1.1);
+}
+.Cards:hover{
+    border-radius: 15px;
+    transform: scale(1.1);
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.overlay p{
+    color: white;
+    font-size: 14px;
+    transform: translateY(20px) ;
+    transition: 0.4s ease;
+}
+.Cards:hover .overlay{
+    opacity: 1;
+}
+.Cards:hover .overlay p {
+    transform: translateY(0);
+}
+.Cards:hover img {
+    transform: scale(1.1);
+    transition: 0.4s ease;
+}

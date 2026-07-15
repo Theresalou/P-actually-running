@@ -1,0 +1,94 @@
+body{
+    background-color: #2f2418;
+}
+
+.titre {
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #b8860b;
+    font-family: "Ballet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    box-shadow: 0 0 10px gold;
+}
+
+audio{
+    border-radius: 25px;
+    box-shadow: 0 0 10px #b8860b;
+    width: 100%;
+}
+
+.base{
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+}
+.content{
+    background-color: #faf3e8;
+    border-radius: 10px;
+    border: 2px solid #c8a24a;
+}
+.text{
+    background-color:#f0c35b;
+    padding: 20px;
+    border-radius: 10px;
+    height: 1650px;
+    width: 830px;
+    border: 5px double goldenrod;
+}
+.text p{
+    color: maroon;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size:30px;
+    line-height: 1;
+}
+.vis{
+    background-color: wheat;
+    border-radius: 10px;
+    max-width: 370px;
+    border: 3px solid rgb(226, 192, 43);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.propositions{
+    display: flex;
+    align-items: flex-start;
+    padding: 30px;    
+}
+.contenaire{
+    background-color: wheat;
+    border-radius: 10px;
+    border: 2px solid brown;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+    width: 1500px;
+    border: 5px double goldenrod;
+    text-decoration: none;
+    padding: 30px;
+    line-height: 45px;
+}
+.contenaire p{
+    font-family: fantasy;
+    font-size: larger;
+}
+.contenaire li{
+    text-decoration: none;
+    font-family: fantasy;
+    letter-spacing: 3px;
+}
+.contenaire li a{
+    text-decoration: none;
+}
