@@ -28,103 +28,59 @@
         <img src="./image/rosedes vents.png" alt="Rose des vents" class="compass">
     
         <div class="Elements">
-            <button onclick="ouvrirPopup()">ORION</button>
+            <button onclick="ouvrirPopup()">★ ORION</button>
             <!-- structure de la popup -->
             <div id="maPopup" class="popup">
                 <div class="popup-contenu">
                     <span class="fermer" onclick="fermerPopup()">&times;</span>
-                    <img src="./image/natali.png" alt="">
+                    <img src="./image/test12.jpeg" alt="Observe orion">
                 </div>
             </div>
-            <a href="./image/tauruseuropa.jfif">☆ Taurus</a>
-            <a href="./image/Cchiron.jfif">★ Venus</a>
-            <a href="./image/night southern sky.avif">☆ Gémaux</a>
+
+            <button onclick="ouvrirPopup()">☆ Taurus</button>
+            <!-- structure de la popup -->
+            <div id="maPopup" class="popup">
+                <div class="popup-contenu">
+                    <span class="fermer" onclick="fermerPopup()">&times;</span>
+                    <img src="./image/test12.jpeg" alt="Observe orion">
+                </div>
+            </div>
+
+            <button onclick="ouvrirPopup()">★ Venus</button>
+            <!-- structure de la popup -->
+            <div id="maPopup" class="popup">
+                <div class="popup-contenu">
+                    <span class="fermer" onclick="fermerPopup()">&times;</span>
+                    <img src="./image/test12.jpeg" alt="Observe orion">
+                </div>
+            </div>
+
+            <button onclick="ouvrirPopup()">☆ Gémaux</button>
+            <!-- structure de la popup -->
+            <div id="maPopup" class="popup">
+                <div class="popup-contenu">
+                    <span class="fermer" onclick="fermerPopup()">&times;</span>
+                    <img src="./image/test12.jpeg" alt="Observe orion">
+                </div>
+            </div>
         </div>
     </div>
-
     
-
-    <!-- centrerla fenêtre lors du click sur le nom -->
-    <!-- <div id="imagePanel" class="image-panel" style="position:fixed;left:50%;top:50%;transform:translate(-50%,-50%) scale(0.9);width:90%;max-width:900px;max-height:90vh;overflow:hidden;background:#000;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.6);opacity:0;pointer-events:none;display:flex;align-items:center;justify-content:center;transition:opacity 250ms ease, transform 250ms ease;z-index:9999;">
-        <div style="position:relative;width:100%;display:flex;align-items:center;justify-content:center;padding:10px;">
-            <button id="closePanel" aria-label="Fermer" style="position:absolute;top:8px;right:12px;z-index:2;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:6px 10px;cursor:pointer;border-radius:4px;">Fermer</button>
-            <img id="panelImage" src="" alt="" style="width:100%;height:auto;max-height:80vh;object-fit:contain;display:block;border-radius:6px;">
-        </div>
-    </div> -->
-
     <script>
-        // The compass
-        // const arrow = document.getElementById('arrow');
-        // const turnon = document.getElementById('turn-on');
+        function ouvrirPopup(){
+            document.getElementById("maPopup").style.display = "block";
+        }
 
-        // turnon.addEventListener('click', () => {
-        //     //Permission demandé sur ios pour obtenir la localisation
-        //     if(typeof DeviceOrientationEvent.requestPermission === 'function'){
-        //         DeviceOrientationEvent.requestPermission()
-        //         .then(Response => {
-        //             if(Response === 'granted'){
-        //                 window.addEventListener('deviceorientation', handler);
-        //             }
-        //         })
-        //         .catch(console.error);
-        //     }else{
-        //         //Pour android et PC
-        //         window.addEventListener('deviceorientation', handler);
-        //     }
-        //     turnon.style.display = 'none'; //Cacher le bouton
-        // });
-        // function handler(e){
-        //     let compassHeading = e.webkitCompassHeading || Math.abs(e.alpha - 360);
-        //     //Appliquer la rotation inverse pour que l'aiguille pointe le nord
-        //     arrow.style.transform = `translateX(-50%) rotate(${-compassHeading}deg)`;
-        // }
+        function fermerPopupp(){
+            document.getElementById("maPopup").style.display = "none";
+        }
 
-        
-        // The popup effect
-        // const imageLinks = document.querySelectorAll('.Elements a');
-        // const imageMap = {
-        //     'ORION': './image/1779967254207.png',
-        //     'Taurus': './image/tauruseuropa.jfif',
-        //     'Venus': './image/Cchiron.jfif',
-        //     'Gémaux': './image/night southern sky.avif'
-        // };
-
-        // function openImageWindow(title, src) {
-        //     const panel = document.getElementById('imagePanel');
-        //     const img = document.getElementById('panelImage');
-        //     const close = document.getElementById('closePanel');
-        //     if (!panel || !img || !close) return;
-        //     img.src = src;
-        //     img.alt = title;
-        //     // modal centrée avec animation
-        //     panel.style.opacity = '1';
-        //     panel.style.transform = 'translate(-50%,-50%) scale(1)';
-        //     panel.style.pointerEvents = 'auto';
-        //     panel.setAttribute('aria-hidden', 'false');
-        //     close.focus();
-
-        //     function closePanel() {
-        //         panel.style.opacity = '0';
-        //         panel.style.transform = 'translate(-50%,-50%) scale(0.9)';
-        //         panel.style.pointerEvents = 'none';
-        //         panel.setAttribute('aria-hidden', 'true');
-        //         img.src = '';
-        //         window.removeEventListener('keydown', escHandler);
-        //     }
-
-        //     const escHandler = (e) => { if (e.key === 'Escape') closePanel(); };
-        //     close.onclick = closePanel;
-        //     window.addEventListener('keydown', escHandler);
-        // }
-
-        // imageLinks.forEach(link => {
-        //     link.addEventListener('click', event => {
-        //         event.preventDefault();
-        //         const name = link.textContent.trim();
-        //         const src = imageMap[name] || './image/night southern sky.avif';
-        //         openImageWindow(name, src);
-        //     });
-        // });
+        window.onclick = function(event){
+            var popup = document.getElementById(maPopup);
+            if (event.target == popup){
+                popup.style.display = "none";
+            }
+        }
     </script>
 </main>
     
