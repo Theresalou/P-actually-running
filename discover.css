@@ -1,6 +1,7 @@
 body{
     /* background-color: rgb(1, 7, 34); */
-    background-image: url(./image/starry.jfif);
+    background-image: url(./image/night\ southern\ sky.avif);
+    content: center;
     min-height: 100vh;
 }
 .classee{
@@ -10,6 +11,14 @@ body{
     flex-direction: column;
     align-items: center;
     letter-spacing: 20px;
+    text-align: center
+}
+.classee a:hover{
+    box-shadow: 0 0 20px plum;
+    background-color: whitesmoke;
+    color: black;
+    transform: scale(1.1);
+    transition: 0.3s ease;
 }
 
 h1{
@@ -19,11 +28,13 @@ h1{
     color: bisque;
 }
 
+.first{
+    display: flex;
+}
 .compass{
     height: 300px;
     width: 300px;
     position: relative;
-    left: 76%;
 }
 
 
@@ -38,10 +49,8 @@ h2{
 
 .common{
     display: flex;
-}
+    gap: 60px;
 
-.common img:hover{
-    transform: scale(1.1);
 }
 
 .popup{
@@ -81,25 +90,19 @@ h2{
 .Elements{
     position: relative;
     margin: 0;
-    left: 0;
+    left: 20%;
     line-height: 60px;
+    gap: 30px;
 }
-button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-family:fantasy;
+.Elements button{
+    background-color: plum;
     font-size: 30px;
-    transition: 0.4s;
-
+    border-radius: 15px;
 }
-
-button :hover{
-    transform: scale(1.1);
-    color: #333;
-    background-color: bisque;
-    border-radius: 10px;
-    width: 100%;
+.Elements button:hover{
+    background-color: blueviolet;
+    font-family:fantasy;
+    font-size: 40px;
+    box-shadow: 0 0 20px blue;
+    transition: 0.4s;
 }

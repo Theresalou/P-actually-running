@@ -10,23 +10,18 @@
 <body>
 
     <div class="classee">
+        <a href="./home.html" style="font-family: fantasy; text-decoration: none; font-weight:200; font-size: 20px; border: 2px solid bisque; border-radius: 5px;">HOME</a>
         <h1 class="head">Discover🌠</h1>
-        <!-- <div class="case">
-            <div class="compass">
-                <div class="arrow" id="arrow"></div>
-                <div class="needle"></div>
-            </div>
-            <button class="turn-on" id="turn-on">Activez la compass</button>
-        </div> -->
     </div>
 <main>
-    <h2>
-        🌟Cliquez sur les options suivantes
-    </h2>
-
-    <div class="common">
+    <div class="first">
+        <h2>
+            🌟Cliquez sur les options suivantes
+        </h2>
         <img src="./image/rosedes vents.png" alt="Rose des vents" class="compass">
-    
+    </div>
+
+    <div class="common">    
         <div class="Elements">
             <button onclick="ouvrirPopup()">★ ORION</button>
             <!-- structure de la popup -->
@@ -37,30 +32,27 @@
                 </div>
             </div>
 
-            <button onclick="ouvrirPopup()">☆ Taurus</button>
-            <!-- structure de la popup -->
-            <div id="maPopup" class="popup">
+            <button onclick="ouvrirPopup1()">☆ Taurus</button>
+            <div id="maPopup1" class="popup">
                 <div class="popup-contenu">
-                    <span class="fermer" onclick="fermerPopup()">&times;</span>
-                    <img src="./image/test12.jpeg" alt="Observe orion">
+                    <span class="fermer" onclick="fermerPopup1()">&times;</span>
+                    <img src="./image/taurero.jpeg" alt="Observe Taurus">
                 </div>
             </div>
 
-            <button onclick="ouvrirPopup()">★ Venus</button>
-            <!-- structure de la popup -->
-            <div id="maPopup" class="popup">
+            <button onclick="ouvrirPopup2()">★ Venus</button>
+            <div id="maPopup2" class="popup">
                 <div class="popup-contenu">
-                    <span class="fermer" onclick="fermerPopup()">&times;</span>
-                    <img src="./image/test12.jpeg" alt="Observe orion">
+                    <span class="fermer" onclick="fermerPopup2()">&times;</span>
+                    <img src="./image/Venus.jpeg" alt="Observe Venus">
                 </div>
             </div>
 
-            <button onclick="ouvrirPopup()">☆ Gémaux</button>
-            <!-- structure de la popup -->
-            <div id="maPopup" class="popup">
+            <button onclick="ouvrirPopup3()">☆ Gémaux</button>
+            <div id="maPopup3" class="popup">
                 <div class="popup-contenu">
-                    <span class="fermer" onclick="fermerPopup()">&times;</span>
-                    <img src="./image/test12.jpeg" alt="Observe orion">
+                    <span class="fermer" onclick="fermerPopup3()">&times;</span>
+                    <img src="./image/Gemaux.jpeg" alt="Observe gémaux">
                 </div>
             </div>
         </div>
@@ -71,12 +63,60 @@
             document.getElementById("maPopup").style.display = "block";
         }
 
-        function fermerPopupp(){
+        function fermerPopup(){
             document.getElementById("maPopup").style.display = "none";
         }
 
         window.onclick = function(event){
-            var popup = document.getElementById(maPopup);
+            var popup = document.getElementById("maPopup");
+            if (event.target == popup){
+                popup.style.display = "none";
+            }
+        }
+        
+
+        function ouvrirPopup1(){
+            document.getElementById("maPopup1").style.display = "block";
+        }
+
+        function fermerPopup1(){
+            document.getElementById("maPopup1").style.display = "none";
+        }
+
+        window.onclick = function(event){
+            var popup = document.getElementById("maPopup1");
+            if (event.target == popup){
+                popup.style.display = "none";
+            }
+        }
+
+
+        function ouvrirPopup2(){
+            document.getElementById("maPopup2").style.display = "block";
+        }
+
+        function fermerPopup2(){
+            document.getElementById("maPopup2").style.display = "none";
+        }
+
+        window.onclick = function(event){
+            var popup = document.getElementById("maPopup2");
+            if (event.target == popup){
+                popup.style.display = "none";
+            }
+        }
+
+
+        function ouvrirPopup3(){
+            document.getElementById("maPopup3").style.display = "block";
+        }
+
+        function fermerPopup3(){
+            document.getElementById("maPopup3").style.display = "none";
+        }
+
+        window.onclick = function(event){
+            var popup = document.getElementById("maPopup3");
             if (event.target == popup){
                 popup.style.display = "none";
             }
