@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wdata-id=""th=device-wdata-id=""th, initial-scale=1.0">
     <title>Mystère de l'univers</title>
     <link rel="stylesheet" href="./mystere.css">
 </head>
@@ -16,51 +16,81 @@
         
         <div class="questions">
             <h2>Sciences</h2>
-            <p id="Question" onclick="Ouvrirpopup()">C'est quoi un trou noir ?</p>
-            <p id="Question1" onclick="Ouvrirpopup()">Qu'est-ce qu'une galaxie ?</p>
-            <p id="Question2" onclick="Ouvrirpopup()">C'est quoi une étoile ?</p>
-            <p id="Question3" onclick="Ouvrirpopup()">C'est quoi la matière noire ?</p>
-            <p id="Question4" onclick="Ouvrirpopup()">C'est quoi l'anti-matière ?</p>
-            <p id="Question5" onclick="Ouvrirpopup()">Qu'est-ce qu'un noyau ?</p>
-            <p id="Question6" onclick="Ouvrirpopup()">Qu'est-ce qu'un système solaire ?</p>
-            <p id="Question7" onclick="Ouvrirpopup()">C'est quoi le gravité ?</p>
-            <p id="Question8" onclick="Ouvrirpopup()">C'est quoi une planète naine ?</p>
-            <p id="Question9" onclick="Ouvrirpopup()">Fusion ou Fission ?</p>
+            <p class="question" data-id="trounoir">C'est quoi un trou noir ?</p>
+            <p class="question" data-id="etoile">C'est quoi une étoile ?</p>
+            <p class="question" data-id="galaxie">Qu'est-ce qu'une galaxie ?</p>
+            <p class="question" data-id="matierenoire">C'est quoi la matière noire ?</p>
+            <p class="question" data-id="noyau">Qu'est-ce qu'un noyau ?</p>
+            <p class="question" data-id="solaire">Qu'est-ce qu'un système solaire ?</p>
+            <p class="question" data-id="gravite">C'est quoi le gravité ?</p>
+            <p class="question" data-id="naine">C'est quoi une planète naine ?</p>
+            <p class="question" data-id="fusion">Fusion ou Fission ?</p>
         </div>
 
-        <div class="chercheur">
+        <div id="popup" class="popup">
+            <div class="popup-contenu">
+                <span class="fermer">&times;</span>
+                <h2 id="titre"></h2>
+                <img id="image">
+                <p id="texte"></p>
+            </div>
+        </div>
+
+        <!-- <div class="chercheur">
             <h2>Scientifiques</h2>
-            <p onclick="Ouvrirpopup()">Qui a découvert la gravité ?</p>
-            <p onclick="Ouvrirpopup()">Quel télescope a observé la voie lactée pour la pemière fois ?</p>
-            <p onclick="Ouvrirpopup()">Qui a découvert la matière noire ?</p>
-            <p onclick="Ouvrirpopup()">Qui a découvert l'anti-matière ?</p>
-            <p onclick="Ouvrirpopup()">Qui ont observé les premières planètes naines de notre système solaire ?</p>
-            <p onclick="Ouvrirpopup()">Qui a découvert la radio-activité ?</p>
+            <p>Qui a découvert la gravité ?</p>
+            <p>Quel télescope a observé la voie lactée pour la pemière fois ?</p>
+            <p>Qui a découvert la matière noire ?</p>
+            <p>Qui a découvert l'anti-matière ?</p>
+            <p>Qui ont observé les premières planètes naines de notre système solaire ?</p>
+            <p>Qui a découvert la radio-activité ?</p>
         </div>
 
         <div class="Objet">
             <h2>Objets et Appareil</h2>
-            <p onclick="Ouvrirpopup()">C'est quoi un satélite ?</p>
-            <p onclick="Ouvrirpopup()">C'est quoi un télescope ?</p>
-            <p onclick="Ouvrirpopup()">Qu'est-ce qu'une fusée ?</p>
-            <p onclick="Ouvrirpopup()">De quelles matières se composent les fusées ?</p>
-            <p onclick="Ouvrirpopup()">Quels minerais y a-t-il dans une fusée ?</p>
-            <p onclick="Ouvrirpopup()">Qu'est-ce qu'un réacteur thermonucléaire ?</p>
-        </div>
+            <p>C'est quoi un satélite ?</p>
+            <p>C'est quoi un télescope ?</p>
+            <p>Qu'est-ce qu'une fusée ?</p>
+            <p>De quelles matières se composent les fusées ?</p>
+            <p>Quels minerais y a-t-il dans une fusée ?</p>
+            <p>Qu'est-ce qu'un réacteur thermonucléaire ?</p>
+        </div> -->
 
         <script>
-            function Ouvrirpopup(){
-                document.getElementById(Question).style.display = "block";
-                document.getElementById(Question1).style.display = "block";
-                document.getElementById(Question2).style.display = "block";
-                document.getElementById(Question3).style.display = "block";
-                document.getElementById(Question4).style.display = "block";
-                document.getElementById(Question5).style.display = "block";
-                document.getElementById(Question6).style.display = "block";
-                document.getElementById(Question7).style.display = "block";
-                document.getElementById(Question8).style.display = "block";
-                document.getElementById(Question9).style.display = "block";
-            }
+            let donnees = {}
+
+            fetch("questions.json")
+            .then(response => response.json())
+            .then(data =>{
+
+                donnees = data;
+
+                console.log(data); //Mua checking
+            });
+
+            const popup = document.getElementById("popup");
+
+            document.querySelectorAll(".question").forEach(question =>{
+                question.addEventListener("click", () => {
+
+                    const id = question.dataset.id;
+
+                    document.getElementById("titre").textContent =
+                        donnees[id].titre;
+
+                    document.getElementById("image").src =
+                        donnees[id].image;
+
+                    document.getElementById("texte").textContent =
+                        donnees[id].reponse;
+
+                    popup.style.display= "flex"
+                });
+            });
+
+            document.querySelector(".fermer").onclick = function(){
+                popup.style.display = "none";
+            };
         </script>
     </main>
 </body>

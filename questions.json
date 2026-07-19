@@ -1,0 +1,55 @@
+{
+    "trounoir": {
+        "titre": "C'est quoi  un trou noir ?",
+        "reponse": "Un trou noir est une région de l'espace où la gravité est tellement forte que rien, même pas la lumière, ne peut s'en échapper.",
+        "image":"image/trounoir.jfif"
+    },
+
+    "etoile": {
+        "titre": "C'est quoi une étoile ?",
+        "reponse": "Une étoile est une énorme boule de gaz qui produit de l'énergie grâce à la fusion nucléaire.",
+        "image": "image/etoiles.jfif"
+    },
+
+    "galaxie": {
+        "titre": "Qu'est-ce qu'une galaxie ?",
+        "reponse": "Une galaxie est un immense ensemble d'étoiles, de gaz, de poussières et de matière noire liés par la gravité.",
+        "image": "image/galaxiiie.jfif"
+    },
+
+    "matierenoire": {
+        "titre": "C'est quoi la matière noire ?",
+        "reponse": "La matière noire est une composante invisible de l'univers dont la présence est déduite par ses effets gravitationnels. La matière noire fournit la masse manquante et la force gravitationnelle nécessaire pour assurer la cohésion des galaxies.",
+        "image": "image/matierenoir.jfif"
+    },
+
+    "noyau": {
+        "titre": "C'est quoi  un noyau ?",
+        "reponse": " : C'est le cœur très dense d'un atome. Il regroupe les protons (charge positive) et les neutrons (neutres), concentrant presque toute la masse de l'atome.",
+        "image": "image/noyau.png"
+    },
+
+    "solaire": {
+        "titre": "Qu'est-ce qu'un système solaire ?",
+        "reponse": "Un système solaire est un ensemble constitué d'une étoile centrale (le Soleil) et de tous les corps célestes qui sont maintenus en orbite autour d'elle par gravité.",
+        "image": "image/solaire.jfif" 
+    },
+
+    "gravite": {
+        "titre": "C'est quoi la gravité ?",
+        "reponse": "La gravité est la force qui attire les objets possédant une masse.",
+        "image": "image/gravité.jfif"
+    },
+
+    "naine": {
+        "titre": "Qu'est-ce qu'une planète naine ?",
+        "reponse": "La gravité est la force qui attire les objets possédant une masse.",
+        "image": "image/gravité.jfif"
+    },
+
+    "fusion": {
+        "titre": "Fusion ou Fission",
+        "reponse":"La fission consiste à diviser le noyau d'un atome lourd (comme l'uranium) en deux noyaux plus légers, ce qui libère de l'énergie et des neutrons. La fusion, à l'inverse, consiste à assembler deux noyaux très légers (comme des isotopes d'hydrogène) pour former un noyau plus lourd, tout en dégageant une énergie colossale",
+        "image": "fusionfission.jfif"
+    }
+}

@@ -6,4 +6,6 @@ header h1{
     text-align: center;
     font-family: fantasy;
 }
-
+ .fermer{
+    cursor: pointer;
+ }
