@@ -2,30 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="wdata-id=""th=device-wdata-id=""th, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mystère de l'univers</title>
     <link rel="stylesheet" href="./mystere.css">
 </head>
 <body>
     <header>
-        <h1><a href="./home.html">HOME</a></h1>
+        <a href="./home.html">HOME</a>
     </header>
 
     <main>
         <div class="titre"><p>Découvrez Les mystères de l'univers</p></div>
         
-        <div class="questions">
-            <h2>Sciences</h2>
-            <p class="question" data-id="trounoir">C'est quoi un trou noir ?</p>
-            <p class="question" data-id="etoile">C'est quoi une étoile ?</p>
-            <p class="question" data-id="galaxie">Qu'est-ce qu'une galaxie ?</p>
-            <p class="question" data-id="matierenoire">C'est quoi la matière noire ?</p>
-            <p class="question" data-id="noyau">Qu'est-ce qu'un noyau ?</p>
-            <p class="question" data-id="solaire">Qu'est-ce qu'un système solaire ?</p>
-            <p class="question" data-id="gravite">C'est quoi le gravité ?</p>
-            <p class="question" data-id="naine">C'est quoi une planète naine ?</p>
-            <p class="question" data-id="fusion">Fusion ou Fission ?</p>
-        </div>
+        <section>
+
+            <div class="questions">
+                <h2>Sciences</h2>
+                <p class="question" data-id="trounoir">C'est quoi un trou noir ?</p>
+                <p class="question" data-id="etoile">C'est quoi une étoile ?</p>
+                <p class="question" data-id="galaxie">Qu'est-ce qu'une galaxie ?</p>
+                <p class="question" data-id="matierenoire">C'est quoi la matière noire ?</p>
+                <p class="question" data-id="noyau">Qu'est-ce qu'un noyau ?</p>
+                <p class="question" data-id="solaire">Qu'est-ce qu'un système solaire ?</p>
+                <p class="question" data-id="gravite">C'est quoi le gravité ?</p>
+                <p class="question" data-id="naine">C'est quoi une planète naine ?</p>
+                <p class="question" data-id="fusion">Fusion ou Fission ?</p>
+                <h2>Scienctifiques</h2>
+                <p class="question" data-id="gravitech">Qui a découvert la gravité ?</p>
+                <p class="question" data-id="galaxiech">Qui a observé la voie lactée pour la pemière fois ?</p>
+                <p class="question" data-id="matierenoirech">Qui a découvert la matière noire ?</p>
+                <p class="question" data-id="antich">Qui a découvert l'anti-matière ?</p>
+                <p class="question" data-id="solairech">Qui ont observé les premières planètes naines de notre système solaire ?</p>
+                <p class="question" data-id="radioch">Qui a découvert la radio-activité ?</p>
+                <h2>Objets & inventions</h2>
+                <p class="question" data-id="satelite">C'est quoi un satélite ?</p>
+                <p class="question" data-id="telescope">C'est quoi un télescope ?</p>
+                <p class="question" data-id="fusee">Qu'est-ce qu'une fusée ?</p>
+                <p class="question" data-id="minerais">Quels minerais y a-t-il dans une fusée ?</p>
+                <p class="question" data-id="reateur">Qu'est-ce qu'un réacteur thermonucléaire ?</p>
+            </div>
+
+            <div class="ajoute">
+                <img src="./image/astronaute.png" alt="astro">
+            </div>
+
+        </section>
+        
 
         <div id="popup" class="popup">
             <div class="popup-contenu">
@@ -35,26 +57,6 @@
                 <p id="texte"></p>
             </div>
         </div>
-
-        <!-- <div class="chercheur">
-            <h2>Scientifiques</h2>
-            <p>Qui a découvert la gravité ?</p>
-            <p>Quel télescope a observé la voie lactée pour la pemière fois ?</p>
-            <p>Qui a découvert la matière noire ?</p>
-            <p>Qui a découvert l'anti-matière ?</p>
-            <p>Qui ont observé les premières planètes naines de notre système solaire ?</p>
-            <p>Qui a découvert la radio-activité ?</p>
-        </div>
-
-        <div class="Objet">
-            <h2>Objets et Appareil</h2>
-            <p>C'est quoi un satélite ?</p>
-            <p>C'est quoi un télescope ?</p>
-            <p>Qu'est-ce qu'une fusée ?</p>
-            <p>De quelles matières se composent les fusées ?</p>
-            <p>Quels minerais y a-t-il dans une fusée ?</p>
-            <p>Qu'est-ce qu'un réacteur thermonucléaire ?</p>
-        </div> -->
 
         <script>
             let donnees = {}
@@ -69,6 +71,7 @@
             });
 
             const popup = document.getElementById("popup");
+
 
             document.querySelectorAll(".question").forEach(question =>{
                 question.addEventListener("click", () => {
@@ -87,7 +90,6 @@
                     popup.style.display= "flex"
                 });
             });
-
             document.querySelector(".fermer").onclick = function(){
                 popup.style.display = "none";
             };

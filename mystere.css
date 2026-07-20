@@ -1,11 +1,80 @@
 body{
     min-height: 100vh;
+    background: no-repeat;
+    background-size: cover;
+    background-image: url(./image/mystere.webp);
 }
 
-header h1{
-    text-align: center;
+header a{
+    color: bisque;
+    text-decoration: none;
+    font-size: 25px;
     font-family: fantasy;
 }
- .fermer{
+
+.titre p{
+    color: white;
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+section{
+    display: flex;
+    gap: 40%;
+}
+.ajoute img{
+    width: 300px;
+    height: 300px;
+
+    animation: zoom 10s infinite;
+}
+@keyframes zoom{
+    from{
+        zoom: 40%;
+    }
+    to{
+        zoom: 100%;
+    }
+}
+.questions h2{
+    color: white;
+    font-family: fantasy;
+    font-size: larger;
+}
+.questions p{
+    color: white;
+    font-family: fantasy;
+    line-height: 30px;
+    margin-left: 8%;
+}
+
+.popup{
+    background-color: rgba(0, 0, 0, 0.363);
+    width: 900px;
+    text-align: center;
+    margin-left: 25%;
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px white;
+}
+.popup h2{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    word-spacing: 8px;
+}
+.popup img{
+    border-radius: 15px;
+    margin: 3%;
+}
+.popup p{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 20px;
+}
+
+.fermer{
+    color: white;
     cursor: pointer;
+    font-size: larger;
+    font-weight: bolder;
  }

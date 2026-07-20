@@ -25,7 +25,7 @@
 
     "noyau": {
         "titre": "C'est quoi  un noyau ?",
-        "reponse": " : C'est le cœur très dense d'un atome. Il regroupe les protons (charge positive) et les neutrons (neutres), concentrant presque toute la masse de l'atome.",
+        "reponse": " C'est le cœur très dense d'un atome. Il regroupe les protons (charge positive) et les neutrons (neutres), concentrant presque toute la masse de l'atome.",
         "image": "image/noyau.png"
     },
 
@@ -51,5 +51,70 @@
         "titre": "Fusion ou Fission",
         "reponse":"La fission consiste à diviser le noyau d'un atome lourd (comme l'uranium) en deux noyaux plus légers, ce qui libère de l'énergie et des neutrons. La fusion, à l'inverse, consiste à assembler deux noyaux très légers (comme des isotopes d'hydrogène) pour former un noyau plus lourd, tout en dégageant une énergie colossale",
         "image": "fusionfission.jfif"
+    },
+
+    "galaxiech": {
+        "titre": "Qui a observé la Voie lactée pour la première fois ?",
+        "reponse": "Galilée fut le premier à observer la Voie lactée avec une lunette astronomique en 1610. Il découvrit qu'elle était constituée d'une multitude d'étoiles invisibles à l'œil nu.",
+        "image": "image/galilée.jpeg"
+    },
+
+    "matierenoirech": {
+        "titre": "Qui a découvert la matière noire ?",
+        "reponse": "L'existence de la matière noire a été proposée en 1933 par l'astronome suisse Fritz Zwicky. En étudiant les galaxies de l'amas de Coma, il remarqua qu'une grande partie de leur masse était invisible.",
+        "image": "image/noirrr.jpeg"
+    },
+
+    "antich": {
+        "titre": "Qui a découvert l'antimatière ?",
+        "reponse": "L'antimatière a été prédite en 1928 par le physicien britannique Paul Dirac. En 1932, Carl Anderson découvrit expérimentalement le positron, la première particule d'antimatière.",
+        "image": "image/carl anderson.jpeg"
+    },
+
+    "solairech": {
+        "titre": "Qui a observé les premières planètes naines de notre système solaire ?",
+        "reponse": "La première planète naine découverte fut Cérès, observée en 1801 par l'astronome italien Giuseppe Piazzi. Plus tard, d'autres planètes naines comme Pluton, Éris, Hauméa et Makémaké furent découvertes par différents astronomes.",
+        "image": "image/solaire.jfif"
+    },
+
+    "gravitech": {
+        "titre": "Qui a découvert la gravité ?",
+        "reponse": "Isaac Newton formula la loi de la gravitation universelle en 1687. Selon la légende, l'idée lui serait venue après avoir observé la chute d'une pomme.",
+        "image": "image/newton.jpeg"
+    },
+
+    "radioch": {
+        "titre": "Qui a découvert la radioactivité ?",
+        "reponse": "La radioactivité fut découverte en 1896 par le physicien français Henri Becquerel. Ses travaux furent ensuite approfondis par Marie Curie et Pierre Curie, qui étudièrent les éléments radioactifs comme le polonium et le radium.",
+        "image": "image/mariecurie.jpeg"
+    },
+    "satelite": {
+    "titre": "C'est quoi un satellite ?",
+    "reponse": "Un satellite est un objet qui tourne autour d'un autre corps céleste grâce à la gravité. Il existe des satellites naturels, comme la Lune autour de la Terre, et des satellites artificiels, fabriqués par l'Homme. Ces derniers servent à la communication (Internet, télévision), à la météo, au GPS, à l'observation de la Terre et à la recherche scientifique. Leur fabrication dure généralement entre 2 et 10 ans selon leur complexité. Les principales alternatives sont les ballons stratosphériques, les drones ou les réseaux d'antennes terrestres, mais ils ne peuvent pas remplacer toutes les missions des satellites.",
+    "image": "image/satelyte.jpeg"
+    },
+
+    "telescope": {
+        "titre": "C'est quoi un télescope ?",
+        "reponse": "Un télescope est un instrument qui collecte la lumière des objets célestes afin de les observer avec précision. Il permet d'étudier les planètes, les étoiles, les galaxies et les nébuleuses. Il existe des télescopes optiques, qui utilisent des miroirs ou des lentilles, et des radiotélescopes, qui détectent les ondes radio provenant de l'espace. La construction d'un grand télescope peut prendre de 5 à plus de 20 ans. Les jumelles astronomiques ou les lunettes astronomiques constituent des alternatives pour les débutants.",
+        "image": "image/telelescope.jpeg"
+    },
+
+    "fusee": {
+        "titre": "Qu'est-ce qu'une fusée ?",
+        "reponse": "Une fusée est un véhicule capable de quitter l'atmosphère terrestre grâce à la poussée produite par ses moteurs. Elle sert à lancer des satellites, envoyer des sondes spatiales ou transporter des astronautes. Les plus grandes fusées mesurent plus de 100 mètres de haut. Leur conception et leur fabrication peuvent durer entre 5 et 15 ans. Les fusées réutilisables, comme celles développées par SpaceX, permettent aujourd'hui de réduire les coûts des lancements.",
+        "image": "image/fuseeeee.jpeg"
+    },
+
+    "minerais": {
+        "titre": "Quels minerais y a-t-il dans une fusée ?",
+        "reponse": "Une fusée est fabriquée à partir de nombreux métaux et minerais. L'aluminium est utilisé pour sa légèreté, le titane pour sa résistance, le fer entre dans la composition de l'acier, le cuivre est présent dans les câbles électriques, tandis que le nickel et le cobalt sont utilisés dans les alliages résistants aux très hautes températures. Certaines fusées utilisent également du lithium dans leurs batteries. Les matériaux composites en fibre de carbone remplacent de plus en plus certains métaux afin d'alléger les lanceurs.",
+        "image": "image/mineraisf.jpeg"
+    },
+
+    "reateur": {
+        "titre": "Qu'est-ce qu'un réacteur thermonucléaire ?",
+        "reponse": "Un réacteur thermonucléaire est une installation expérimentale qui cherche à produire de l'énergie grâce à la fusion nucléaire, le même phénomène qui alimente le Soleil. Il consiste à faire fusionner des noyaux d'hydrogène à des températures supérieures à 100 millions de degrés. Cette technologie pourrait produire une grande quantité d'énergie avec très peu de déchets radioactifs. Des projets comme ITER en France développent cette technologie depuis plusieurs décennies. Les principales alternatives actuelles sont les réacteurs nucléaires à fission, ainsi que les énergies renouvelables comme le solaire, l'éolien et l'hydroélectricité.",
+        "image": "image/reacteur.jpeg"
     }
 }

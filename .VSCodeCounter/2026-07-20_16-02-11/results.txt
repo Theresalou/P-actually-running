@@ -1,0 +1,56 @@
+Date : 2026-07-20 16:02:11
+Directory : c:\L1 fasi courses\P actually running
+Total : 30 files,  2073 codes, 3 comments, 184 blanks, all 2260 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| PostCSS  |         13 |      1,153 |          2 |         66 |      1,221 |
+| HTML     |         16 |        843 |          1 |        104 |        948 |
+| JSON     |          1 |         77 |          0 |         14 |         91 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                    | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                       |         30 |      2,073 |          3 |        184 |      2,260 |
++---------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                | language | code       | comment    | blank      | total      |
++---------------------------------------------------------+----------+------------+------------+------------+------------+
+| c:\L1 fasi courses\P actually running\Argo.css          | PostCSS  |         91 |          0 |          1 |         92 |
+| c:\L1 fasi courses\P actually running\Argo.html         | HTML     |         56 |          0 |          5 |         61 |
+| c:\L1 fasi courses\P actually running\chiron.html       | HTML     |         51 |          0 |          6 |         57 |
+| c:\L1 fasi courses\P actually running\danae.css         | PostCSS  |         83 |          0 |          2 |         85 |
+| c:\L1 fasi courses\P actually running\danae.html        | HTML     |         33 |          0 |          3 |         36 |
+| c:\L1 fasi courses\P actually running\discover.css      | PostCSS  |         98 |          1 |          9 |        108 |
+| c:\L1 fasi courses\P actually running\discover.html     | HTML     |        106 |          1 |         21 |        128 |
+| c:\L1 fasi courses\P actually running\home.css          | PostCSS  |        241 |          1 |         22 |        264 |
+| c:\L1 fasi courses\P actually running\home.html         | HTML     |         45 |          0 |          5 |         50 |
+| c:\L1 fasi courses\P actually running\index6.css        | PostCSS  |         86 |          0 |          2 |         88 |
+| c:\L1 fasi courses\P actually running\index6.html       | HTML     |         33 |          0 |          3 |         36 |
+| c:\L1 fasi courses\P actually running\index7.css        | PostCSS  |         91 |          0 |          1 |         92 |
+| c:\L1 fasi courses\P actually running\index7.html       | HTML     |         46 |          0 |          4 |         50 |
+| c:\L1 fasi courses\P actually running\index8.css        | PostCSS  |         36 |          0 |          3 |         39 |
+| c:\L1 fasi courses\P actually running\index8.html       | HTML     |         26 |          0 |          1 |         27 |
+| c:\L1 fasi courses\P actually running\index9.css        | PostCSS  |         47 |          0 |          3 |         50 |
+| c:\L1 fasi courses\P actually running\index9.html       | HTML     |         24 |          0 |          3 |         27 |
+| c:\L1 fasi courses\P actually running\mystere.css       | PostCSS  |         56 |          0 |          5 |         61 |
+| c:\L1 fasi courses\P actually running\mystere.html      | HTML     |         76 |          0 |         15 |         91 |
+| c:\L1 fasi courses\P actually running\orion.html        | HTML     |         53 |          0 |          6 |         59 |
+| c:\L1 fasi courses\P actually running\polluxcastor.css  | PostCSS  |         89 |          0 |          5 |         94 |
+| c:\L1 fasi courses\P actually running\polluxcastor.html | HTML     |         50 |          0 |          5 |         55 |
+| c:\L1 fasi courses\P actually running\questions.json    | JSON     |         77 |          0 |         14 |         91 |
+| c:\L1 fasi courses\P actually running\story.css         | PostCSS  |        150 |          0 |          5 |        155 |
+| c:\L1 fasi courses\P actually running\story.html        | HTML     |        141 |          0 |         17 |        158 |
+| c:\L1 fasi courses\P actually running\test.css          | PostCSS  |         32 |          0 |          7 |         39 |
+| c:\L1 fasi courses\P actually running\test.html         | HTML     |         24 |          0 |          0 |         24 |
+| c:\L1 fasi courses\P actually running\verseau.html      | HTML     |         39 |          0 |          4 |         43 |
+| c:\L1 fasi courses\P actually running\whatson.css       | PostCSS  |         53 |          0 |          1 |         54 |
+| c:\L1 fasi courses\P actually running\whatson.html      | HTML     |         40 |          0 |          6 |         46 |
+| Total                                                   |          |      2,073 |          3 |        184 |      2,260 |
++---------------------------------------------------------+----------+------------+------------+------------+------------+
